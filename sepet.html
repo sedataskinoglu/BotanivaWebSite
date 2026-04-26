@@ -163,8 +163,89 @@
                 <li><a href="iletişim.html">İletişim</a></li>
         </ul>
   </nav>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Botaniva</title>
 
   
+
+  <style>
+    body { font-family: Arial; margin: 20px; }
+
+    
+    .cart {
+      position: relative;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .cart span {
+      position: absolute;
+      top: -8px;
+      right: -10px;
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px 0;
+      width: 200px;
+    }
+
+    button {
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
+    #cartList {
+      margin-top: 20px;
+      border-top: 2px solid #333;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <h2>Ürünler</h2>
+
+  <div class="product">
+    <h4>Dracaena</h4>
+    <button onclick="addToCart('Dracaena')">Sepete Ekle</button>
+  </div>
+
+  <h2>Sepet</h2>
+  <ul id="cartList"></ul>
+
+  <script>
+    let cart = [];
+
+    function addToCart(product) {
+      cart.push(product);
+
+      // listeyi güncelle
+      let list = document.getElementById("cartList");
+      let li = document.createElement("li");
+      li.textContent = product;
+      list.appendChild(li);
+
+      // sayaç güncelle
+      document.getElementById("cartCount").textContent = cart.length;
+    }
+  </script>
+
+</body>
+</html>
+
+
 </body>
 </html>
 
