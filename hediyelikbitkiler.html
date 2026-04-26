@@ -150,6 +150,22 @@
 	font-size: 15px;
 	font-family: 'Roboto', sans-serif;
 }    
+.sepete-ekle{
+    margin-top:10px;
+    padding:10px;
+    background:#5d6d4e;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    width:100%;
+    transition:0.3s;
+}
+
+.sepete-ekle:hover{
+    background:#46563c;
+}
+
     </style>
 </head>
 <body>
@@ -164,6 +180,7 @@
         </div>
 
         <div class="kullanici_islemleri">
+            <a href="sepet.html"><span>🛒</span></a>
                 <a href="giriskayıtol.html" > Kayıt Ol</a>
                 <a href="giriskayıtol.html"> Giriş Yap</a>   
         </div>
@@ -178,6 +195,7 @@
                         <a href="salonbitkileri.html">Salon Bitkileri</a>
                         <a href="hayvandostubitkiler.html">Hayvan Dostu Bitkiler</a>
                         <a href="hediyelikbitkiler.html">Hediyelik Bitkiler</a>
+                        <a href="legoçiçekler.html">Lego Çiçekler</a>
                     </div>
                 </li>
                 <li class="DropDown">
@@ -210,6 +228,7 @@
     Sulama: 10–15 günde 1
     Bakım: Fazla su kök çürütür
             </pre>
+            <button class="sepete-ekle" onclick="sepeteEkle('Sukulent')">Sepete Ekle</button>
         </div>
     </div>
 
@@ -222,6 +241,7 @@
     Sulama: Ayda 1–2
     Bakım: En az bakım isteyen bitkilerden biridir
             </pre>
+            <button class="sepete-ekle" onclick="sepeteEkle('Kaktüs')">Sepete Ekle</button>
         </div>
     </div>
 
@@ -234,6 +254,7 @@
     Sulama: Toprak hafif nemli tutulmalı
     Bakım: Düzenli budama gerekir
             </pre>
+            <button class="sepete-ekle" onclick="sepeteEkle('Bonsai')">Sepete Ekle</button>
         </div>
     </div>
 
@@ -246,6 +267,7 @@
     Sulama: Az su
     Bakım: Kuraklığa dayanıklıdır, kokuludur
             </pre>
+            <button class="sepete-ekle" onclick="sepeteEkle('Lavanta')">Sepete Ekle</button>
         </div>
     </div>                                                              
 
@@ -258,6 +280,7 @@
     Sulama: Haftada 1–2
     Bakım: Nemli ortam sever
             </pre>
+            <button class="sepete-ekle" onclick="sepeteEkle('Antoryum')">Sepete Ekle</button>
         </div>
     </div>
 
@@ -270,6 +293,7 @@
     Sulama: Az su (2–3 haftada 1)
     Bakım: Fazla suya hassas
             </pre>
+            <button class="sepete-ekle" onclick="sepeteEkle('Aloevera')">Sepete Ekle</button>
         </div>
     </div>
      <div class="kart">
@@ -281,6 +305,7 @@
     Sulama: Haftada 1
     Bakım: Hızlı büyür, kolay çoğalır
             </pre>
+            <button class="sepete-ekle" onclick="sepeteEkle('Para Çiçeği')">Sepete Ekle</button>
         </div>
     </div>
 
