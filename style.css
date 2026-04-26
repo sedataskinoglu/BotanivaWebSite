@@ -407,6 +407,12 @@ html {
     opacity: 0.8; /* Biraz daha soft durması için */
 }
 
+footer{
+            text-align:center;
+            padding:20px;
+            color:#777;
+        }
+
 
 
 
