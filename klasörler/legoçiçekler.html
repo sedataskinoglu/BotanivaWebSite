@@ -6,7 +6,7 @@
     <title>Botaniva</title>
     <link rel="icon" href="images/logo.png" type="image/png">
     <style>
-		body{
+    body{
     background-color: rgb(245, 15, 15)808;
     line-height: 1.6;
      font-family: 'Roboto', sans-serif;
@@ -109,56 +109,65 @@
 .menu_ogeleri a:hover {
     color: #4CAF50;
 }
-
-
-
-
-
-.blog-section{
-    padding:60px 20px;
-    background:#f4f6f8;
-}
-
-.blog-container{
+   
+.container{
     max-width:1100px;
-    margin:auto;
+    margin:30px auto;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
-    margin-top:30px;
+    padding:0 20px;
 }
 
-.blog-card{
+/* CARD */
+.card{
     background:white;
     border-radius:12px;
     overflow:hidden;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
     transition:0.3s;
-    padding-bottom:10px;
 }
 
-.blog-card:hover{
-    transform:scale(1.03);
+.card:hover{
+    transform:translateY(-5px);
 }
 
-.blog-card img{
+.card img{
     width:100%;
-    height:160px;
+    height:200px;
     object-fit:cover;
 }
 
-.blog-card h3{
-    padding:10px;
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
     color:#5d6d4e;
+    margin:0;
 }
 
-.blog-card p{
-    padding:0 10px 10px;
+.card-content p{
     font-size:14px;
-    color:#555;
+    color:#666;
 }
 
-	</style>>
+.price{
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    margin-top:10px;
+    padding:10px;
+    background:#5d6d4e;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+    </style>
 </head>
 <body>
     <header class="header">
@@ -172,87 +181,94 @@
         </div>
 
         <div class="kullanici_islemleri">
-            <a href="sepet.html"><span>🛒</span></a>
-                <a href="giriskayıtol.html" > Kayıt Ol</a>
-                <a href="giriskayıtol.html"> Giriş Yap</a>   
+                <a href="klasörler/sepet.html"><span>🛒</span></a>
+                <a href="klasörler/giriskayıtol.html" > Kayıt Ol</a>
+                <a href="klasörler/giriskayıtol.html"> Giriş Yap</a>   
         </div>
      </header>
   <nav>
         <ul class="menu_ogeleri">
-                <li><a href="index.html">Hakkımızda</a></li>
+                <li><a href="klasörler/index.html">Hakkımızda</a></li>
                  <li class="DropDown">
                     <a href="#" class="dropbtn">Dükkan</a>
                     <div class="dropdown_content">
-                        <a href="ofisbitkiler.html">Ofis Bitkileri</a>
-                        <a href="salonbitkileri.html">Salon Bitkileri</a>
-                        <a href="hayvandostubitkiler.html">Hayvan Dostu Bitkiler</a>
-                        <a href="hediyelikbitkiler.html">Hediyelik Bitkiler</a>
-                        <a href="legoçiçekler.html">Lego Çiçekler</a>
+                        <a href="klasörler/ofisbitkiler.html">Ofis Bitkileri</a>
+                        <a href="klasörler/salonbitkileri.html">Salon Bitkileri</a>
+                        <a href="klasörler/hayvandostubitkiler.html">Hayvan Dostu Bitkiler</a>
+                        <a href="klasörler/hediyelikbitkiler.html">Hediyelik Bitkiler</a>
+                        <a href="klasörler/legoçiçekler.html">Lego Çiçekler</a>
                     </div>
                 </li>
                 <li class="DropDown">
                     <a href="#" class="dropbtn">İç Mekan Süs Bitkileri</a>
                     <div class="dropdown_content">
-                        <a href="saksılıbitkiler.html">Saksılı Bitkileri</a>
-                        <a href="kaktüsvesukulent.html">Kaktüs ve Sukulent</a>
-                        <a href="aranjmanlar.html">Aranjmanlar</a>
+                        <a href="klasörler/saksılıbitkiler.html">Saksılı Bitkileri</a>
+                        <a href="klasörler/kaktüsvesukulent.html">Kaktüs ve Sukulent</a>
+                        <a href="klasörler/aranjmanlar.html">Aranjmanlar</a>
                     </div>
                 </li>
                 <li class="DropDown">
                     <a href="#" class="dropbtn">Dekoratif Saksılar</a>
                     <div class="dropdown_content">
-                        <a href="kumassaksılar.html">Kumaş Saksılar</a>
-                        <a href="özeltasarimsaksılar.html">Özel Tasarım Saksılar</a>
-                        <a href="mozaiksaksılar.html">Mozaik Saksılar</a>
+                        <a href="klasörler/kumassaksılar.html">Kumaş Saksılar</a>
+                        <a href="klasörler/özeltasarimsaksılar.html">Özel Tasarım Saksılar</a>
+                        <a href="klasörler/mozaiksaksılar.html">Mozaik Saksılar</a>
                     </div>
                 </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="iletişim.html">İletişim</a></li>
+                <li><a href="klasörler/blog.html">Blog</a></li>
+                <li><a href="klasörler/iletişim.html">İletişim</a></li>
         </ul>
   </nav>
- <section id="blog" class="blog-section">
+<div class="container">
 
-    <div class="blog-header">
-    
-        <h2 style="text-align:center;">Bitkilerle ilgili rehberler ve ipuçları 🌿</h2>
+    <div class="card">
+        <img src="images/legkaktüs.png">
+        <div class="card-content">
+            <h3>Lego Kaktüs</h3>
+            <div class="price">₺1200</div>
+            <a href="#" class="btn">Sepete Ekle</a>
+        </div>
     </div>
 
-    <div class="blog-container">
-
-        <div class="blog-card">
-            <img src="images/bitkisulama.jpg">
-            <h3>Bitkiler Nasıl Sulanır?</h3>
-            <p>Doğru sulama teknikleri ile bitkilerini sağlıklı tut.</p>
+    <div class="card">
+        <img src="images/legokirazçi.png">
+        <div class="card-content">
+            <h3>Lego Kiraz Çiçeği</h3>
+            <div class="price">₺1000</div>
+            <a href="#" class="btn">Sepete Ekle</a>
         </div>
-
-        <div class="blog-card">
-            <img src="images/SukulentBakım.jpg">
-            <h3>Sukulent Bakımı</h3>
-            <p>Az su isteyen bitkiler nasıl yaşatılır?</p>
-        </div>
-
-        <div class="blog-card">
-            <img src="images/evcilhayvandostu.jpg">
-            <h3>Evcil Hayvan Dostu Bitkiler</h3>
-            <p>Kedi ve köpekler için güvenli bitkiler.</p>
-        </div>
-
-        <div class="blog-card">
-            <img src="images/dekoraston.jpg">
-            <h3>Bitki Dekorasyonu</h3>
-            <p>Evin için doğal dekor fikirleri.</p>
-        </div>
-
-		<div class="blog-card">
-            <img src="images/lego.jpg">
-            <h3>Lego Çiçekler: Modern Dekorasyon Trendi</h3>
-            <p>Solmayan, bakım istemeyen Lego çiçekler ile evine yaratıcı ve eğlenceli bir dekor ekle.</p>
-        </div>
-
     </div>
 
-</section>
+    <div class="card">
+        <img src="images/legokrizam.png">
+        <div class="card-content">
+            <h3>Lego Krizantemi</h3>
+            <div class="price">₺1100</div>
+            <a href="#" class="btn">Sepete Ekle</a>
+        </div>
+    </div>
 
+	<div class="card">
+        <img src="images/legomutlubitki.png">
+        <div class="card-content">
+            <h3>Lego Mutlu Bitkisi</h3>
+            <div class="price">₺1000</div>
+            <a href="#" class="btn">Sepete Ekle</a>
+        </div>
+    </div>
+
+	<div class="card">
+        <img src="images/legoorkide.png">
+        <div class="card-content">
+            <h3>Lego Orkidesi</h3>
+            <div class="price">₺1300</div>
+            <a href="#" class="btn">Sepete Ekle</a>
+        </div>
+    </div>
+
+   
+
+</div>
 
 </body>
 </html>
